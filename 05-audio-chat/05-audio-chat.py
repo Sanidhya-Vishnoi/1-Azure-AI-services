@@ -48,7 +48,7 @@ def main():
                 print("Getting a response ...\n")
 
                 # Encode the audio file
-                file_path = "https://github.com/MicrosoftLearning/mslearn-ai-language/raw/refs/heads/main/Labfiles/09-audio-chat/data/avocados.mp3"
+                file_path = "https://github.com/Sanidhya-Vishnoi/1-Azure-AI-services/blob/main/05-audio-chat/audio-chat_data.mp3"
                 response = requests.get(file_path)
                 response.raise_for_status()
                 audio_data = base64.b64encode(response.content).decode('utf-8')
